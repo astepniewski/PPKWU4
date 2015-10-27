@@ -20,5 +20,20 @@ namespace Biblioteka1Tests
 
             File.Delete(fileName);
         }
+
+        [TestMethod]
+        public void TestFileContentIsCorrect()
+        {
+            string fileName = "fileName.txt";
+            HTTPFileDownloader fileDownloader = new HTTPFileDownloader();
+            fileDownloader.DownloadFile("https://wordpress.org/plugins/about/readme.txt", fileName);
+
+            using (StreamReader sr = new StreamReader(fileName))
+            {
+                Assert.AreEqual(sr.ReadLine(), "=== Plugin Name ===");
+            }
+
+            File.Delete(fileName);
+        }
     }
 }
