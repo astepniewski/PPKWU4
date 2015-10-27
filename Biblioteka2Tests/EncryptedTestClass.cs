@@ -7,10 +7,9 @@ namespace Biblioteka2Tests
     [TestClass]
     public class EncryptedTestClass
     {   
-
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]
-        public void FilePathIsNull()
+        public void FilePathIsNull_EncryptFile()
         {
             Encryption encryption = new Encryption();
             encryption.EncryptFile(null, "encrypted.txt", "password");
@@ -18,7 +17,7 @@ namespace Biblioteka2Tests
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]
-        public void EncryptedFilePathIsNull()
+        public void EncryptedFilePathIsNull_EncryptFile()
         {
             Encryption encryption = new Encryption();
             encryption.EncryptFile("plik.txt", null, "password");
@@ -26,7 +25,7 @@ namespace Biblioteka2Tests
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]
-        public void PasswordIsNull()
+        public void PasswordIsNull_EncryptFile()
         {
             Encryption encryption = new Encryption();
             encryption.EncryptFile("plik.txt", "encrypted.txt", null);
