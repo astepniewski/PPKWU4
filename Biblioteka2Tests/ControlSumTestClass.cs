@@ -14,5 +14,13 @@ namespace Biblioteka2Tests
             ControlSum controlSum = new ControlSum();
             controlSum.MD5SUm(null);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(System.IO.FileNotFoundException))]
+        public void FileIsNotFound_MD5sum()
+        {
+            ControlSum controlSum = new ControlSum();
+            controlSum.MD5SUm("asd.txt");
+        }
     }
 }
