@@ -46,5 +46,13 @@ namespace Biblioteka2Tests
             Encryption encryption = new Encryption();
             encryption.DecryptFile("plik.txt", null, "password");
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void PasswordIsNull_DecryptFile()
+        {
+            Encryption encryption = new Encryption();
+            encryption.DecryptFile("plik.txt", "encrypted.txt", null);
+        }
     }
 }
