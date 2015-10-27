@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Biblioteka3;
 
 namespace Biblioteka2Tests
 {
@@ -7,8 +8,11 @@ namespace Biblioteka2Tests
     public class ControlSumTestClass
     {
         [TestMethod]
-        public void TestMethod1()
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void FilePathIsNull_MD5sum()
         {
+            ControlSum controlSum = new ControlSum();
+            controlSum.MD5SUm(null);
         }
     }
 }
