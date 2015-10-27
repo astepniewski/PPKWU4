@@ -32,11 +32,11 @@ namespace Biblioteka2Tests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(ArgumentNullException))]
+        [ExpectedException(typeof(System.Security.Cryptography.CryptographicException))]
         public void FilePathIsNull_DecryptFile()
         {
             Encryption encryption = new Encryption();
-            encryption.DecryptFile(null, "encrypted.txt", "password");
+            encryption.DecryptFile("plik.txt", null, "abc");
         }
 
         [TestMethod]
@@ -44,7 +44,7 @@ namespace Biblioteka2Tests
         public void EncryptedFilePathIsNull_DecryptFile()
         {
             Encryption encryption = new Encryption();
-            encryption.DecryptFile("plik.txt", null, "password");
+            encryption.DecryptFile(null, "plik.txt", "abc");
         }
 
         [TestMethod]

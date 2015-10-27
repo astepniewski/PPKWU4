@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Biblioteka2;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,8 @@ namespace PPKWU4
     {
         static void Main(string[] args)
         {
+            Encryption encryption = new Encryption();
+            encryption.DecryptFile("plik.txt", null, "abcd");
         }
     }
 }
