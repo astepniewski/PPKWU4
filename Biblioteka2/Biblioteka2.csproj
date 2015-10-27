@@ -7,8 +7,8 @@
     <ProjectGuid>{D4910A5C-DD54-422F-BD56-82141B47F194}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Biblioteka3</RootNamespace>
-    <AssemblyName>Biblioteka3</AssemblyName>
+    <RootNamespace>Biblioteka2</RootNamespace>
+    <AssemblyName>Biblioteka2</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
