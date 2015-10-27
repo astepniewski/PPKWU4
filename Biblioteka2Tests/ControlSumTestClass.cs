@@ -21,6 +21,7 @@ namespace Biblioteka2Tests
         {
             ControlSum controlSum = new ControlSum();
             controlSum.MD5SUm("asd.txt");
-        }
+        }  
+
     }
 }
