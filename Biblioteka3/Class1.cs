@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Drawing;
 
 namespace Biblioteka3
 {
     public class FileFormatRecognizer
     {
+        protected Image image;
+
         public void FileFormatRecognition(string filename)
         {
             //JPG, PNG, GIF,TGA
@@ -27,11 +31,14 @@ namespace Biblioteka3
             if (graphicFileFormats.Contains(fileFormat)) 
             {
                 System.Console.Write("Plik obrazkowy");
-
+                PictureBox pb = new PictureBox();
+                pb.Image = System.Drawing.Image.FromFile(filename);
             }
             else if(soundFileFormats.Contains(fileFormat))
             {
                 System.Console.Write("Plik dzwiekowy");
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(filename);
+                player.Play();
             }
             else if (fileFormat.Equals("zip"))
             {

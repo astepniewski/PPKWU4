@@ -60,6 +60,13 @@
   <ItemGroup>
     <Content Include="Lib\Biblioteka1.dll" />
     <Content Include="Lib\Biblioteka2.dll" />
+    <Content Include="Lib\Biblioteka3.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Biblioteka3\Biblioteka3.csproj">
+      <Project>{13925e23-56bd-4798-930b-67f1a9b2641d}</Project>
+      <Name>Biblioteka3</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
