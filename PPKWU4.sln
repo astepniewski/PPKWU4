@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteka2", "Biblioteka2\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteka2Tests", "Biblioteka2Tests\Biblioteka2Tests.csproj", "{4DA87434-EA7E-4072-B22D-C3BAA7664F42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteka3", "Biblioteka3\Biblioteka3.csproj", "{13925E23-56BD-4798-930B-67F1A9B2641D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Biblioteka1Tests", "Biblioteka1Tests\Biblioteka1Tests.csproj", "{7A95BA9F-4B80-40E6-A016-7A046B1766A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{4DA87434-EA7E-4072-B22D-C3BAA7664F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DA87434-EA7E-4072-B22D-C3BAA7664F42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DA87434-EA7E-4072-B22D-C3BAA7664F42}.Release|Any CPU.Build.0 = Release|Any CPU
-		{13925E23-56BD-4798-930B-67F1A9B2641D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{13925E23-56BD-4798-930B-67F1A9B2641D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{13925E23-56BD-4798-930B-67F1A9B2641D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{13925E23-56BD-4798-930B-67F1A9B2641D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A95BA9F-4B80-40E6-A016-7A046B1766A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A95BA9F-4B80-40E6-A016-7A046B1766A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A95BA9F-4B80-40E6-A016-7A046B1766A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A95BA9F-4B80-40E6-A016-7A046B1766A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
