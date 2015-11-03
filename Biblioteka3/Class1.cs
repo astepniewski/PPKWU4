@@ -32,7 +32,7 @@ namespace Biblioteka3
             {
                 System.Console.Write("Plik obrazkowy");
                 PictureBox pb = new PictureBox();
-                pb.Image = System.Drawing.Image.FromFile(filename); 
+                pb.Image = System.Drawing.Image.FromFile(filename);
             }
             else if(soundFileFormats.Contains(fileFormat))
             {
